@@ -1,0 +1,37 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 11 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     Reduced_Dataset-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    2000
+Attributes:   11
+              airline
+              flight
+              source_city
+              departure_time
+              stops
+              arrival_time
+              destination_city
+              class
+              duration
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 11 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.9163
+Mean absolute error                   6692.1576
+Root mean squared error               9536.7096
+Relative absolute error                 34.2843 %
+Root relative squared error             42.5204 %
+Total Number of Instances             2000     
+
